@@ -16,22 +16,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Container(
-          color: Colors.grey[100],
-          child: Column(
-            children: <Widget>[
-              GradientAppBar("Attendance"),
-              Container(
-                padding: EdgeInsets.only(top: 10.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[box, box, box],
-                ),
+    return Scaffold(
+      body: Container(
+        color: Colors.grey[100],
+        child: Column(
+          children: <Widget>[
+            GradientAppBar("Attendance"),
+            Container(
+              padding: EdgeInsets.only(top: 10.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[box, box, box],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
